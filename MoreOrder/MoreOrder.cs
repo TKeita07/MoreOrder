@@ -81,19 +81,19 @@ namespace MoreOrder
 
         public void Awake()
         {
-            shrineChance_stage1 = Config.Bind("General", "ShrineOfOrderChance_Stage1", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
-            shrineChance_stage2 = Config.Bind("General", "ShrineOfOrderChance_Stage2", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
-            shrineChance_stage3 = Config.Bind("General", "ShrineOfOrderChance_Stage3", 1.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
-            shrineChance_stage4 = Config.Bind("General", "ShrineOfOrderChance_Stage4", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
-            shrineChance_stage5 = Config.Bind("General", "ShrineOfOrderChance_Stage5", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
-            shrineChance_finalStage = Config.Bind("General", "ShrineOfOrderChance_FinalStage", 1.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_stage1 = Config.Bind("Stage1", "Probability_Stage1", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_stage2 = Config.Bind("Stage2", "Probability_Stage2", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_stage3 = Config.Bind("Stage3", "Probability_Stage3", 1.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_stage4 = Config.Bind("Stage4", "Probability_Stage4", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_stage5 = Config.Bind("Stage5", "Probability_Stage5", 0.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
+            shrineChance_finalStage = Config.Bind("FinalStage", "Probability_FinalStage", 1.0f, "Probability of spawning the Shrine of Order in the stage (0.0 = 0%, 1.0 = 100%)");
 
-            spawn_in_stage1 = Config.Bind("General", "Stage 1", false, "The Shrine of Order will have a chance of spawning in any map of stage 1");
-            spawn_in_stage2 = Config.Bind("General", "Stage 2", false, "The Shrine of Order will have a chance of spawning in any map of stage 2");
-            spawn_in_stage3 = Config.Bind("General", "Stage 3", true, "The Shrine of Order will have a chance of spawning in any map of stage 3");
-            spawn_in_stage4 = Config.Bind("General", "Stage 4", false, "The Shrine of Order will have a chance of spawning in any map of stage 4");
-            spawn_in_stage5 = Config.Bind("General", "Stage 5", false, "The Shrine of Order will have a chance of spawning in any map of stage 5");
-            spawn_in_finalStage = Config.Bind("General", "Final Stage", true, "The Shrine of Order will have a chance of spawning in the final stage");
+            spawn_in_stage1 = Config.Bind("Stage1", "SpawnIn_Stage1", false, "The Shrine of Order will have a chance of spawning in any map of stage 1");
+            spawn_in_stage2 = Config.Bind("Stage2", "SpawnIn_Stage2", false, "The Shrine of Order will have a chance of spawning in any map of stage 2");
+            spawn_in_stage3 = Config.Bind("Stage3", "SpawnIn_Stage3", true, "The Shrine of Order will have a chance of spawning in any map of stage 3");
+            spawn_in_stage4 = Config.Bind("Stage4", "SpawnIn_Stage4", false, "The Shrine of Order will have a chance of spawning in any map of stage 4");
+            spawn_in_stage5 = Config.Bind("Stage5", "SpawnIn_Stage5", false, "The Shrine of Order will have a chance of spawning in any map of stage 5");
+            spawn_in_finalStage = Config.Bind("FinalStage", "SpawnIn_FinalStage", true, "The Shrine of Order will have a chance of spawning in the final stage");
 
             Set_Options();
 
