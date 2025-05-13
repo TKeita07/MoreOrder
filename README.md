@@ -10,5 +10,7 @@ The probabilities remain the same for maps within the same stage (like Distant R
 
 
 Default Values : 
+
 Stage 3 and FinalStage — 100%
+
 The rest are disabled
