@@ -9,6 +9,7 @@ using System.Linq;
 using RiskOfOptions;
 using RiskOfOptions.Options;
 using RiskOfOptions.OptionConfigs;
+using System;
 
 namespace MoreOrder
 {
@@ -95,7 +96,28 @@ namespace MoreOrder
             spawn_in_stage5 = Config.Bind("Stage5", "SpawnIn_Stage5", false, "The Shrine of Order will have a chance of spawning in any map of stage 5");
             spawn_in_finalStage = Config.Bind("FinalStage", "SpawnIn_FinalStage", true, "The Shrine of Order will have a chance of spawning in the final stage");
 
-            Set_Options();
+
+            // Vérifie si RiskOfOptions est chargé
+            var riskOfOptionsType = Type.GetType("RiskOfOptions.ModSettingsManager, RiskOfOptions");
+            if (riskOfOptionsType != null)
+            {
+
+                try
+                {
+                    // Appels classiques ici si la dépendance est bien présente
+                    Set_Options();  // Ta méthode normale avec les `ModSettingsManager.AddOption(...)`
+                }
+                catch (Exception ex)
+                {
+                    Logger.LogError("Erreur lors de l'enregistrement des options RiskOfOptions : " + ex);
+                }
+            }else
+            {
+                Logger.LogInfo("RiskOfOptions non détecté. Les options ne seront pas ajoutées.");
+            }
+
+
+
 
 
             Logger.LogInfo("MoreOrder : loaded 22 !");

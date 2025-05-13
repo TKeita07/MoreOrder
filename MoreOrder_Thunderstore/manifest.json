@@ -1,11 +1,11 @@
 ﻿{
 	"name": "MoreOrder",
-	"version_number": "1.0.0",
-	"website_url": "https://github.com/ton-nom/MoreOrder",
-	"description": "Ajoute une Shrine of Order avec une probabilité personnalisée sur les maps du stage 3 et Commencement.",
+	"version_number": "1.0.1",
+	"website_url": "https://github.com/TKeita07/MoreOrder",
+	"description": "Adds customizable chances to spawn Shrines of Order.",
 	"dependencies": [
-	  "bbepis-BepInExPack-5.4.1900",
-	  "RiskofThunder-R2API_Core-4.0.11",
-	  "RiskofThunder-R2API_Language-4.0.11"
+        "bbepis-BepInExPack-5.4.2117",
+        "RiskofThunder-R2API_Core-5.1.2",
+		"RiskofThunder-HookGenPatcher-1.2.3"
 	]
   }
